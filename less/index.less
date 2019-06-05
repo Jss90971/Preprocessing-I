@@ -63,8 +63,9 @@ html, body {
   margin: 0 auto;
 }
 /* Variables */
-@padding: 20px;
 
+@padding: 20px;
+@text-size: 20px;
 /* Header */
 nav {
 	position: relative;
@@ -89,7 +90,7 @@ nav {
 .jacob-img{
 	padding: 50px 0 5px 20px;
 	height: 295px;
-	width: 295px;
+	width: 330px;
 }
 
 .description {
@@ -112,11 +113,33 @@ nav {
 		left: @padding;
 		padding: 10px 10px 10px 10px;
 		background-color: #A9A9A9;
-		border-radius: 5px;
+		border-radius: 8px;
 	}
 }
 
-/* Mid Section */
+/* About Me Section and bottom section  */
+.about-me{
+	display: flex;
+	padding-top: @padding;
+	padding-bottom: @padding;
+}
+.sec1 {
+	width: 400px;
+	h3 {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+}
+.sec2 {
+	padding-left: 10px;
+	h3 {
+		font-size:@text-size;
+		padding-bottom: 10px;
+	}
+	table {
+		width: 300px;
+	}
+}
 
 td, th {
   border: 1px solid #dddddd;
@@ -126,4 +149,24 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.bottom-sec {
+	padding-bottom: 20px;
+	h4{
+		font-size: 20px;
+	}
+	table {
+		width: 695px;
+	}
+}
+
+footer {
+	text-align: center;
+	background-color: #A9A9A9;
+  height: 40px;
+		span{
+			position: relative;
+			top: 50%;
+		}
 }
