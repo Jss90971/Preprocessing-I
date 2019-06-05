@@ -135,14 +135,16 @@ body {
   height: 100%;
 }
 section {
-  width: 880px;
+  width: 695px;
   /* TB LR */
   margin: 0 auto;
 }
+/* Variables */
 /* Header */
 nav {
   position: relative;
-  left: 500px;
+  left: 430px;
+  padding: 25px 0 25px 0;
 }
 nav a {
   padding: 10px 10px;
@@ -152,13 +154,35 @@ nav a {
 /* Top Section */
 .info-sec {
   border: 1px solid black;
-  height: auto;
-  width: 880px;
+  height: 570px;
+  width: 695px;
   background-color: #dddddd;
 }
 .jacob-img {
-  height: 200px;
-  width: 230px;
+  padding: 50px 0 5px 20px;
+  height: 295px;
+  width: 295px;
+}
+.description h1 {
+  padding-left: 20px;
+  font-size: 50px;
+}
+.description h2 {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.description p {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+.description button {
+  position: relative;
+  left: 20px;
+  padding: 10px 10px 10px 10px;
+  background-color: #A9A9A9;
+  border-radius: 5px;
 }
 /* Mid Section */
 td,

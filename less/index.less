@@ -58,15 +58,18 @@ html, body {
 }
 
  section {
-  width: 880px;
+  width: 695px;
   /* TB LR */
   margin: 0 auto;
 }
+/* Variables */
+@padding: 20px;
 
 /* Header */
 nav {
 	position: relative;
-	left: 500px;
+	left: 430px;
+	padding: 25px 0 25px 0;
 	a{
 		padding: 10px 10px;
 		text-decoration: none;
@@ -78,14 +81,39 @@ nav {
 
 .info-sec {
 	border: 1px solid black;
-	height:auto;
-	width: 880px;
+	height: 570px;
+	width: 695px;
 	background-color: #dddddd;
 }
 
 .jacob-img{
-	height: 200px;
-	width: 230px;
+	padding: 50px 0 5px 20px;
+	height: 295px;
+	width: 295px;
+}
+
+.description {
+	h1 {
+		padding-left: @padding;
+		font-size: 50px;
+	}
+	h2 {
+		padding-left: @padding;
+		padding-top: 10px;
+		font-size: 20px;
+	}
+	p {
+		padding-top: 30px;
+		padding-left: @padding;
+		padding-bottom: 40px;
+	}
+	button {
+		position: relative;
+		left: @padding;
+		padding: 10px 10px 10px 10px;
+		background-color: #A9A9A9;
+		border-radius: 5px;
+	}
 }
 
 /* Mid Section */
