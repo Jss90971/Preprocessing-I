@@ -134,9 +134,39 @@ html,
 body {
   height: 100%;
 }
-container {
-  min-width: 880px;
+section {
+  width: 880px;
   /* TB LR */
   margin: 0 auto;
 }
 /* Header */
+nav {
+  position: relative;
+  left: 500px;
+}
+nav a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: black;
+}
+/* Top Section */
+.info-sec {
+  border: 1px solid black;
+  height: auto;
+  width: 880px;
+  background-color: #dddddd;
+}
+.jacob-img {
+  height: 200px;
+  width: 230px;
+}
+/* Mid Section */
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
