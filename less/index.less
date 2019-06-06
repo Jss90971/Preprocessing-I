@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,3 +57,116 @@ html, body {
     height: 100%;
 }
 
+ section {
+  width: 695px;
+  /* TB LR */
+  margin: 0 auto;
+}
+/* Variables */
+
+@padding: 20px;
+@text-size: 20px;
+/* Header */
+nav {
+	position: relative;
+	left: 430px;
+	padding: 25px 0 25px 0;
+	a{
+		padding: 10px 10px;
+		text-decoration: none;
+		color: black;
+	}
+}
+
+/* Top Section */
+
+.info-sec {
+	border: 1px solid black;
+	height: 570px;
+	width: 695px;
+	background-color: #dddddd;
+}
+
+.jacob-img{
+	padding: 50px 0 5px 20px;
+	height: 295px;
+	width: 330px;
+}
+
+.description {
+	h1 {
+		padding-left: @padding;
+		font-size: 50px;
+	}
+	h2 {
+		padding-left: @padding;
+		padding-top: 10px;
+		font-size: 20px;
+	}
+	p {
+		padding-top: 30px;
+		padding-left: @padding;
+		padding-bottom: 40px;
+	}
+	button {
+		position: relative;
+		left: @padding;
+		padding: 10px 10px 10px 10px;
+		background-color: #A9A9A9;
+		border-radius: 8px;
+	}
+}
+
+/* About Me Section and bottom section  */
+.about-me{
+	display: flex;
+	padding-top: @padding;
+	padding-bottom: @padding;
+}
+.sec1 {
+	width: 400px;
+	h3 {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+}
+.sec2 {
+	padding-left: 10px;
+	h3 {
+		font-size:@text-size;
+		padding-bottom: 10px;
+	}
+	table {
+		width: 300px;
+	}
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.bottom-sec {
+	padding-bottom: 20px;
+	h4{
+		font-size: 20px;
+	}
+	table {
+		width: 695px;
+	}
+}
+
+footer {
+	text-align: center;
+	background-color: #A9A9A9;
+  height: 40px;
+		span{
+			position: relative;
+			top: 50%;
+		}
+}

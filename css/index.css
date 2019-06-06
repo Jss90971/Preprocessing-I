@@ -1,1 +1,236 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+section {
+  width: 695px;
+  /* TB LR */
+  margin: 0 auto;
+}
+/* Variables */
+/* Header */
+nav {
+  position: relative;
+  left: 430px;
+  padding: 25px 0 25px 0;
+}
+nav a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: black;
+}
+/* Top Section */
+.info-sec {
+  border: 1px solid black;
+  height: 570px;
+  width: 695px;
+  background-color: #dddddd;
+}
+.jacob-img {
+  padding: 50px 0 5px 20px;
+  height: 295px;
+  width: 330px;
+}
+.description h1 {
+  padding-left: 20px;
+  font-size: 50px;
+}
+.description h2 {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.description p {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+.description button {
+  position: relative;
+  left: 20px;
+  padding: 10px 10px 10px 10px;
+  background-color: #A9A9A9;
+  border-radius: 8px;
+}
+/* About Me Section and bottom section  */
+.about-me {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sec1 {
+  width: 400px;
+}
+.sec1 h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.sec2 {
+  padding-left: 10px;
+}
+.sec2 h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.sec2 table {
+  width: 300px;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.bottom-sec {
+  padding-bottom: 20px;
+}
+.bottom-sec h4 {
+  font-size: 20px;
+}
+.bottom-sec table {
+  width: 695px;
+}
+footer {
+  text-align: center;
+  background-color: #A9A9A9;
+  height: 40px;
+}
+footer span {
+  position: relative;
+  top: 50%;
+}
