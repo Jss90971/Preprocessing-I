@@ -57,40 +57,57 @@ html, body {
     height: 100%;
 }
 
- section {
-  width: 695px;
-  /* TB LR */
-  margin: 0 auto;
+section {
+	max-width: 800px;
+	width: 100%;
+ 	/* TB LR */
+ 	margin: 0 auto;
+}
+@media (max-width: 500px){
+ 	max-width: 500px;
+	margin: 0 auto;
 }
 /* Variables */
 
 @padding: 20px;
-@text-size: 20px;
+@text-size: 2rem;
+
 /* Header */
 nav {
-	position: relative;
-	left: 430px;
-	padding: 25px 0 25px 0;
+  display: flex;
+	justify-content: flex-end;
 	a{
 		padding: 10px 10px;
 		text-decoration: none;
 		color: black;
 	}
 }
+@media (max-width: 500px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		max-width: 500px;
+	}
+  a {
+		border: 1px solid black;
+
+	}
+}
+
 
 /* Top Section */
 
 .info-sec {
-	border: 1px solid black;
-	height: 570px;
-	width: 695px;
+	max-width: 100%;
+  height: auto;
 	background-color: #dddddd;
 }
 
 .jacob-img{
 	padding: 50px 0 5px 20px;
-	height: 295px;
-	width: 330px;
+	max-width: 100%;
+  height: auto;
 }
 
 .description {
@@ -116,6 +133,16 @@ nav {
 		border-radius: 8px;
 	}
 }
+@media (max-width: 500px){
+	.info-sec{
+		width: 500px;
+	}
+	.jacob_img {
+	 display: block;
+	 max-width: 100%;
+	 height: auto;
+	}
+}
 
 /* About Me Section and bottom section  */
 .about-me{
@@ -126,7 +153,7 @@ nav {
 .sec1 {
 	width: 400px;
 	h3 {
-		font-size: 20px;
+		font-size: @text-size;
 		padding-bottom: 10px;
 	}
 }
@@ -137,7 +164,9 @@ nav {
 		padding-bottom: 10px;
 	}
 	table {
-		width: 300px;
+		border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
 	}
 }
 
@@ -154,11 +183,14 @@ tr:nth-child(even) {
 .bottom-sec {
 	padding-bottom: 20px;
 	h4{
-		font-size: 20px;
+		font-size: @text-size;
 	}
 	table {
-		width: 695px;
+		border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
 	}
+
 }
 
 footer {
@@ -168,5 +200,8 @@ footer {
 		span{
 			position: relative;
 			top: 50%;
+		}
+		@media (max-width: 500px){
+			width: auto
 		}
 }
